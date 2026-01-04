@@ -90,6 +90,9 @@ body {
 }
 
 @media (max-width: 768px) {
+    body {
+        background-color: rgb(134, 103, 0);
+    }
     .menu-icon {
         display: flex;
     }
@@ -100,29 +103,28 @@ body {
         top: 100%;
         right: 0;
         width: 100%;
-        background-image: linear-gradient(to bottom left, rgba(57, 214, 219, 0.685), rgb(0, 0, 0));
+        background-image: linear-gradient(to bottom left, rgba(122, 106, 82, 0.356), rgb(124, 75, 0));
         border-bottom: none;
         flex-direction: column;
-        align-items: center;
-        padding: 1.5em 0;
-        gap: 1em;
+        align-items: flex-start;
+        padding: 4em 0;
+        gap: 2em;
         transition: 0.5s;
     }
 
     .nav-menu ul div a {
         font-weight: 600;
         color: rgb(255, 255, 255);
-        margin-right: 30px;
         background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255));
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        transition: 0.5s;
+        transition: 0.8s;
     }
     
     .navbar {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(20, 54, 63);
+        background-color: rgb(155, 115, 6);
     }
     .navbar h2 {
         color: white;
@@ -200,7 +202,7 @@ body {
         justify-content: center;
         text-align: center;
         gap: 50px;
-        background-color: rgba(144, 179, 224, 0.322);
+        background-color: rgb(134, 103, 0);
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -210,13 +212,13 @@ body {
         align-items: center;
         text-align: center;
         line-height: 1.5rem;
-        border: 2px solid rgb(123, 139, 233);
+        border: 1px solid rgb(255, 154, 2);
         border-radius: 10px;
         padding: 10px 20px;
     }
     .iconIMG{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -241,6 +243,10 @@ body {
         text-align: center;
         margin-top: 50px;
         margin-bottom: 150px;
+        background-color: rgba(255, 255, 255, 0.075);
+        box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.329);
+        padding-top: 50px;
+        border-radius: 80px;
     }
     .accessories-el p {
         width: 295px;
@@ -252,11 +258,11 @@ body {
         gap: 30px;
     }
     .accessoriesIMG {
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
-        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.329);
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.103);
     }
 
     .pajamas-el {
@@ -267,6 +273,10 @@ body {
         text-align: center;
         margin-top: 50px;
         margin-bottom: 150px;
+        background-color: rgba(255, 255, 255, 0.075);
+        box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.329);
+        padding-top: 50px;
+        border-radius: 80px;
     }
     .pajamas-el p {
         width: 348px;
@@ -278,11 +288,11 @@ body {
         gap: 30px;
     }
     .pajamasIMG {
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
-        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.329);
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.103);
     }
 
     .heels-el {
@@ -293,6 +303,10 @@ body {
         text-align: center;
         margin-top: 50px;
         margin-bottom: 150px;
+        background-color: rgba(255, 255, 255, 0.075);
+        box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.329);
+        padding-top: 50px;
+        border-radius: 80px;
     }
     .heels-el p {
         width: 348px;
@@ -304,11 +318,11 @@ body {
         gap: 30px;
     }
     .heelsIMG {
-        width: 400px;
-        height: 250px;
+        width: 350px;
+        height: 200px;
         object-fit: cover;
         border-radius: 10px;
-        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.329);
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.103);
     }
 }
 
