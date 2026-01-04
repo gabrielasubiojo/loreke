@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-size: auto;
+    font-style: normal;
 }
 
 .container {
@@ -90,8 +95,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
     body {
-        background-color: rgb(134, 103, 0);
+        background-color: rgba(180, 180, 180, 0.199);
     }
     .menu-icon {
         display: flex;
@@ -103,11 +110,11 @@ body {
         top: 100%;
         right: 0;
         width: 100%;
-        background-image: linear-gradient(to bottom left, rgba(122, 106, 82, 0.356), rgb(124, 75, 0));
+        background-image: linear-gradient(to bottom left, rgba(122, 106, 82, 0.356), rgba(190, 166, 129, 0.096));
         border-bottom: none;
         flex-direction: column;
         align-items: flex-start;
-        padding: 4em 0;
+        padding: 2em 0em;
         gap: 2em;
         transition: 0.5s;
     }
@@ -115,7 +122,7 @@ body {
     .nav-menu ul div a {
         font-weight: 600;
         color: rgb(255, 255, 255);
-        background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255));
+        background: linear-gradient(to left, rgb(236, 143, 4), rgb(139, 96, 3));
         -webkit-text-fill-color: transparent;
         background-clip: text;
         transition: 0.8s;
@@ -124,7 +131,7 @@ body {
     .navbar {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(155, 115, 6);
+        background-color: rgb(235, 176, 17);
     }
     .navbar h2 {
         color: white;
@@ -144,20 +151,20 @@ body {
     }
 
     .heroImg1 {
-        width: 200px;
-        height: 250px;
+        width: 180px;
+        height: 220px;
         object-fit: cover;
         /* border-radius: 15px; */
-        box-shadow: 1px 3px 5px 1px rgba(255, 255, 255, 0.61);
+        box-shadow: 1px 3px 5px 1px rgba(255, 255, 255, 0.568);
         border-top-left-radius: 50px;
         border-bottom-left-radius: 50px;
     }
     .heroImg2 {
-        width: 200px;
-        height: 250px;
+        width: 180px;
+        height: 220px;
         object-fit: cover;
         /* border-radius: 15px; */
-        box-shadow: 1px 3px 5px 1px rgba(255, 255, 255, 0.61);
+        box-shadow: 1px 3px 5px 1px rgba(255, 255, 255, 0.568);
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
     }
@@ -170,16 +177,19 @@ body {
         margin-bottom: 0px;
         padding-top: 120px;
         padding-bottom: 50px;
-        background-color: black;
-        border-bottom-left-radius: 80px;
-        border-bottom-right-radius: 80px;
+        background: url("/image/rafael-de-nadai-b0eg-PYGICQ-unsplash.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
     .hero-sectionLeft {
         text-align: center;
     }
     .hero-sectionLeft h1 {
         margin-bottom: 0px;
-        color: rgb(255, 151, 31);
+        color: rgb(235, 176, 17);
     }
     .hero-sectionLeft p {
         width: 350px;
@@ -201,10 +211,11 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
-        gap: 50px;
-        background-color: rgb(134, 103, 0);
+        gap: 100px;
+        background-color: rgba(180, 180, 180, 0.199);
         padding-top: 100px;
         padding-bottom: 100px;
+        font-style: italic;
     }
     .content-elBox {
         display: flex;
@@ -212,13 +223,16 @@ body {
         align-items: center;
         text-align: center;
         line-height: 1.5rem;
-        border: 1px solid rgb(255, 154, 2);
+        border: 2px solid rgb(148, 89, 0);
         border-radius: 10px;
         padding: 10px 20px;
     }
+    .content-elBox p {
+        margin: 0px;
+    }
     .iconIMG{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
         object-fit: cover;
     }
@@ -246,10 +260,15 @@ body {
         background-color: rgba(255, 255, 255, 0.075);
         box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.329);
         padding-top: 50px;
-        border-radius: 80px;
+        border-radius: 50px;
+    }
+    .accessories-el h2 {
+        color: rgb(235, 176, 17);
+        margin-top: 0px;
     }
     .accessories-el p {
         width: 295px;
+        line-height: 1.3rem;
     }
     .accessories-el2 {
         display: flex;
@@ -276,10 +295,15 @@ body {
         background-color: rgba(255, 255, 255, 0.075);
         box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.329);
         padding-top: 50px;
-        border-radius: 80px;
+        border-radius: 50px;
+    }
+    .pajamas-el h2 {
+        color: rgb(235, 176, 17);
+        margin-top: 0px;
     }
     .pajamas-el p {
         width: 348px;
+        line-height: 1.3rem;
     }
     .pajamas-el2 {
         display: flex;
@@ -306,10 +330,15 @@ body {
         background-color: rgba(255, 255, 255, 0.075);
         box-shadow: 1px 0px 10px 1px rgba(0, 0, 0, 0.329);
         padding-top: 50px;
-        border-radius: 80px;
+        border-radius: 50px;
+    }
+    .heels-el h2 {
+        color: rgb(235, 176, 17);
+        margin-top: 0px;
     }
     .heels-el p {
         width: 348px;
+        line-height: 1.3rem;
     }
     .heels-el2 {
         display: flex;
@@ -327,6 +356,7 @@ body {
 }
 
 @media (min-width: 768px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
     .nav-menu ul li a:hover {
         display: none;
@@ -339,6 +369,8 @@ body {
 
 /*Desktop View*/
 @media (min-width: 1200px) {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
     .navbar {
         display: flex;
         justify-content: space-between;
