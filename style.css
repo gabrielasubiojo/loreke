@@ -1,0 +1,531 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 92%;
+    margin: auto;
+    height: 100%;
+}
+
+/***************** Top-bar *************/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.068);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 4.5em;
+}
+
+.nav-menu ul div a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    line-height: 2em;
+    background: linear-gradient(to left, rgb(17, 17, 51), rgb(30, 17, 110));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-menu ul div a:hover {
+    background: linear-gradient(to left, rgb(1, 48, 255), rgb(1, 174, 255));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: 0.5s;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2; /* Keep it above the menu */
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Open/Close Animation for Menu Icon */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.navbar h2 {
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-image: linear-gradient(to bottom left, rgba(57, 214, 219, 0.685), rgb(0, 0, 0));
+        border-bottom: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5em 0;
+        gap: 1em;
+        transition: 0.5s;
+    }
+
+    .nav-menu ul div a {
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        margin-right: 30px;
+        background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255));
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        transition: 0.5s;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(20, 54, 63);
+    }
+    .navbar h2 {
+        color: white;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    input {
+        display: none;
+    }
+
+    .heroImg1 {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        /* border-radius: 15px; */
+        box-shadow: 1px 3px 5px 1px rgba(255, 255, 255, 0.61);
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+    .heroImg2 {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        /* border-radius: 15px; */
+        box-shadow: 1px 3px 5px 1px rgba(255, 255, 255, 0.61);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 120px;
+        padding-bottom: 50px;
+        background-color: black;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 80px;
+    }
+    .hero-sectionLeft {
+        text-align: center;
+    }
+    .hero-sectionLeft h1 {
+        margin-bottom: 0px;
+        color: rgb(255, 151, 31);
+    }
+    .hero-sectionLeft p {
+        width: 350px;
+        line-height: 1.2rem;
+        color: whitesmoke;
+    }
+    .hero-sectionLeft-header, .explore-btn {
+        display: none;
+    }
+
+    .hero-sectionRight {
+        display: flex;
+    }
+
+
+    .content-el {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        background-color: rgba(144, 179, 224, 0.322);
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .content-elBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 1.5rem;
+        border: 2px solid rgb(123, 139, 233);
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    .iconIMG{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .elBOx1 {
+        padding: 10px 50px;
+    }
+    .elBOx2 {
+        padding: 15px 54px;
+    }
+    .elBOx3 {
+        padding: 15px 55px;
+    }
+    .elBOx4 {
+        padding: 15px 65px;
+    }
+
+    .accessories-el {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    .accessories-el p {
+        width: 295px;
+    }
+    .accessories-el2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .accessoriesIMG {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.329);
+    }
+
+    .pajamas-el {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    .pajamas-el p {
+        width: 348px;
+    }
+    .pajamas-el2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .pajamasIMG {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.329);
+    }
+
+    .heels-el {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+    .heels-el p {
+        width: 348px;
+    }
+    .heels-el2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .heelsIMG {
+        width: 400px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.329);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .nav-menu ul li a:hover {
+        display: none;
+    }
+
+    .container {
+        width: 690px;
+    }
+}
+
+/*Desktop View*/
+@media (min-width: 1200px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #87d0dd;
+        padding: 0.5em 1em;
+        box-shadow: 1px 1px 8px 1px rgba(40, 10, 150, 0.116);
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .container {
+        width: 1170px;
+    }
+
+    /* hero-section */
+
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-left: -150px;
+        background: url("/image/mohammad-alizade-nIlwOYUbQEA-unsplash.jpg");
+        background-repeat: none;
+        background-size: cover;
+        background-position: center;
+        padding-top: 120px;
+        padding-bottom: 180px;
+        padding-right: 50px;
+        padding-left: 50px;
+        gap: 200px;
+    }
+    .hero-sectionLeft {
+        line-height: 0px;
+    }
+    .hero-sectionLeft-header {
+        max-width: fit-content;
+        background-color: rgba(163, 211, 255, 0.534);
+        padding: 2px 8px;
+        border-radius: 50px;
+        color: rgb(4, 4, 48);
+    }
+    .hero-sectionLeft h1 {
+        font-size: 4em;
+        color: rgb(0, 186, 219);
+    }
+    .hero-sectionLeft p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        width: 420px;
+    }
+    .explore-btn {
+        font-size: 1.5rem;
+        padding: 5px 20px;
+        background-color: rgba(129, 214, 253, 0.24);
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.384);
+        cursor: pointer;
+    }
+    .explore-btn:hover {
+        background-color: rgba(0, 154, 165, 0.74);
+        color: white;
+    }
+    
+    .content-el {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(158, 236, 255, 0.61);
+        padding-top: 150px;
+        padding-bottom: 200px;
+        border: 1px solid white;
+        border-top-right-radius: 350px;
+        border-bottom-left-radius: 350px;
+    }
+    .content-elBox {
+        text-align: center;
+        line-height: 1.5rem;
+        border: 2px solid rgb(0, 17, 112);
+        border-radius: 10px;
+        padding: 15px 20px;
+    }
+    .content-elBox h3 {
+        color: rgb(250, 146, 164);
+    }
+
+    .accessories-el, .pajamas-el,
+    .heels-el {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    .accessories-el h2 {
+        color: rgb(97, 96, 96);
+        font-size: 1.8rem;
+    }
+    .pajamas-el h2 {
+        color: rgb(116, 116, 116);
+        font-size: 1.8rem;
+    }
+    .heels-el h2 {
+        color: rgb(88, 88, 88);
+        font-size: 1.8rem;
+    }
+    .accessories-el p {
+        color: rgb(7, 32, 59);
+        font-size: 1.2rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        line-height: 1.8rem;
+    }
+    .pajamas-el p {
+        color: rgb(7, 32, 59);
+        font-size: 1.2rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        line-height: 1.8rem;
+    }
+    .heels-el p {
+        color: rgb(7, 32, 59);
+        font-size: 1.2rem;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        line-height: 1.8rem;
+    }
+    .accessories-el2, .pajamas-el2, 
+    .heels-el2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-sectionRight {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .heroImg1 {
+        width: 400px;
+        height: 420px;
+        border-radius: 100%;
+        position: absolute;
+        right: 80px;
+        object-fit: cover;
+        box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.425);
+    }
+    .heroImg2 {
+        width: 380px;
+        height: 420px;
+        border-radius: 100%;
+        position: absolute;
+        left: -200px;
+        object-fit: cover;
+        box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.397);
+    }
+
+    .iconIMG {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        object-fit: fit;
+    }
+
+    /* featuredProducts */
+    .featuredProducts {
+        background: url("/image/featuredProductBg.avif");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+   /*  accessories Images */
+    .accessoriesIMG {
+        width: 310px;
+        height:280px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.171);
+        border-radius: 5px;
+    }
+    .pajamasIMG {
+        width: 310px;
+        height:280px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.171);
+        border-radius: 5px;
+    }
+    .heelsIMG {
+        width: 310px;
+        height:280px;
+        object-fit: cover;
+        box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.171);
+        border-radius: 5px;
+    }
+}
