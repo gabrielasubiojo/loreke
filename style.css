@@ -48,13 +48,13 @@ body {
     font-size: 1.2em;
     cursor: pointer;
     line-height: 2em;
-    background: linear-gradient(to left, rgb(17, 17, 51), rgb(30, 17, 110));
+    background: linear-gradient(to left, rgb(71, 9, 4), rgb(253, 35, 28));
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .nav-menu ul div a:hover {
-    background: linear-gradient(to left, rgb(1, 48, 255), rgb(1, 174, 255));
+    background: linear-gradient(to left, rgb(255, 54, 40), rgb(255, 71, 65));
     -webkit-text-fill-color: transparent;
     background-clip: text;
     transition: 0.5s;
@@ -122,7 +122,7 @@ body {
     .nav-menu ul div a {
         font-weight: 600;
         color: rgb(255, 255, 255);
-        background: linear-gradient(to left, rgb(236, 143, 4), rgb(139, 96, 3));
+        background: linear-gradient(to left, rgba(255, 80, 27, 0.76), rgb(139, 3, 3));
         -webkit-text-fill-color: transparent;
         background-clip: text;
         transition: 0.8s;
@@ -131,7 +131,7 @@ body {
     .navbar {
         display: flex;
         justify-content: space-between;
-        background-color: rgb(235, 176, 17);
+        background-color: rgb(168, 41, 9);
     }
     .navbar h2 {
         color: white;
@@ -189,7 +189,7 @@ body {
     }
     .hero-sectionLeft h1 {
         margin-bottom: 0px;
-        color: rgb(235, 176, 17);
+        color: rgb(255, 41, 33);
     }
     .hero-sectionLeft p {
         width: 350px;
@@ -223,11 +223,12 @@ body {
         align-items: center;
         text-align: center;
         line-height: 1.5rem;
-        border: 2px solid rgb(148, 89, 0);
+        border: 2px solid rgb(148, 0, 0);
         border-radius: 10px;
         padding: 10px 20px;
     }
     .content-elBox p {
+        color: rgb(136, 136, 136);
         margin: 0px;
     }
     .iconIMG{
@@ -263,10 +264,11 @@ body {
         border-radius: 50px;
     }
     .accessories-el h2 {
-        color: rgb(235, 176, 17);
+        color: rgb(255, 53, 46);
         margin-top: 0px;
     }
     .accessories-el p {
+        color: rgb(136, 136, 136);
         width: 295px;
         line-height: 1.3rem;
     }
@@ -298,10 +300,11 @@ body {
         border-radius: 50px;
     }
     .pajamas-el h2 {
-        color: rgb(235, 176, 17);
+        color: rgb(255, 53, 46);
         margin-top: 0px;
     }
     .pajamas-el p {
+        color: rgb(136, 136, 136);
         width: 348px;
         line-height: 1.3rem;
     }
@@ -333,10 +336,11 @@ body {
         border-radius: 50px;
     }
     .heels-el h2 {
-        color: rgb(235, 176, 17);
+        color: rgb(255, 53, 46);
         margin-top: 0px;
     }
     .heels-el p {
+        color: rgb(136, 136, 136);
         width: 348px;
         line-height: 1.3rem;
     }
@@ -371,12 +375,24 @@ body {
 @media (min-width: 1200px) {
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+    body {
+        font-family: "Roboto", sans-serif;
+        font-size: auto;
+        font-style: normal;
+    }
+
     .navbar {
         display: flex;
         justify-content: space-between;
-        background-color: #87d0dd;
+        background-color: #770f0152;
         padding: 0.5em 1em;
         box-shadow: 1px 1px 8px 1px rgba(40, 10, 150, 0.116);
+    }
+    .navbar h2 {
+        color: brown;
+    }
+    .nav-menu ul div a {
+        color: brown;
     }
 
     .menu-icon {
@@ -394,7 +410,7 @@ body {
         align-items: center;
         justify-content: space-around;
         margin-left: -150px;
-        background: url("/image/mohammad-alizade-nIlwOYUbQEA-unsplash.jpg");
+        background: url("/image/rafael-de-nadai-b0eg-PYGICQ-unsplash.jpg");
         background-repeat: none;
         background-size: cover;
         background-position: center;
@@ -408,17 +424,19 @@ body {
         line-height: 0px;
     }
     .hero-sectionLeft-header {
+        font-size: 1rem;
         max-width: fit-content;
-        background-color: rgba(163, 211, 255, 0.534);
-        padding: 2px 8px;
+        background-color: rgba(202, 14, 14, 0.11);
+        padding: 15px 8px;
         border-radius: 50px;
-        color: rgb(4, 4, 48);
+        color: rgb(184, 4, 4);
     }
     .hero-sectionLeft h1 {
         font-size: 4em;
-        color: rgb(0, 186, 219);
+        color: rgb(97, 7, 7);
     }
     .hero-sectionLeft p {
+        color: rgb(51, 51, 51);
         font-size: 1.4rem;
         line-height: 2.1rem;
         width: 420px;
@@ -426,14 +444,15 @@ body {
     .explore-btn {
         font-size: 1.5rem;
         padding: 5px 20px;
-        background-color: rgba(129, 214, 253, 0.24);
+        background-color: rgba(182, 39, 3, 0.5);
+        color: whitesmoke;
         border: none;
-        border-radius: 5px;
+        border-radius: 8px;
         box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.384);
         cursor: pointer;
     }
     .explore-btn:hover {
-        background-color: rgba(0, 154, 165, 0.74);
+        background-color: rgba(214, 44, 21, 0.959);
         color: white;
     }
     
@@ -442,41 +461,61 @@ body {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        background-color: rgba(158, 236, 255, 0.61);
+        background-color: rgba(255, 158, 158, 0.61);
         padding-top: 150px;
         padding-bottom: 200px;
-        border: 1px solid white;
-        border-top-right-radius: 350px;
-        border-bottom-left-radius: 350px;
+        border: 2px solid white;
+        border-top-right-radius: 200px;
+        border-bottom-left-radius: 200px;
+        box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.336);
+        margin-top: 100px;
     }
     .content-elBox {
         text-align: center;
         line-height: 1.5rem;
-        border: 2px solid rgb(0, 17, 112);
+        border: 2px solid brown;
         border-radius: 10px;
         padding: 15px 20px;
+        box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.336);
     }
     .content-elBox h3 {
-        color: rgb(250, 146, 164);
+        color: rgb(134, 8, 29);
+    }
+    .content-elBox p {
+        color: rgba(99, 6, 6, 0.541);
     }
 
     .accessories-el, .pajamas-el,
     .heels-el {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         margin-bottom: 100px;
     }
     .accessories-el h2 {
-        color: rgb(97, 96, 96);
+        color: rgb(139, 7, 7);
+        background-color: rgba(255, 106, 106, 0.342);
+        max-width: max-content;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
         font-size: 1.8rem;
     }
     .pajamas-el h2 {
-        color: rgb(116, 116, 116);
+        color: rgb(139, 7, 7);
+        background-color: rgba(255, 106, 106, 0.342);
+        max-width: max-content;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
         font-size: 1.8rem;
     }
     .heels-el h2 {
-        color: rgb(88, 88, 88);
+        color: rgb(139, 7, 7);
+        background-color: rgba(255, 106, 106, 0.342);
+        max-width: max-content;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
         font-size: 1.8rem;
     }
     .accessories-el p {
@@ -523,7 +562,7 @@ body {
         position: absolute;
         right: 80px;
         object-fit: cover;
-        box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.425);
+        box-shadow: 0px 8px 10px 0px rgba(255, 255, 255, 0.849);
     }
     .heroImg2 {
         width: 380px;
@@ -532,7 +571,7 @@ body {
         position: absolute;
         left: -200px;
         object-fit: cover;
-        box-shadow: 1px 8px 10px 0px rgba(0, 0, 0, 0.397);
+        box-shadow: 0px 8px 10px 0px rgb(255, 255, 255);
     }
 
     .iconIMG {
@@ -544,7 +583,7 @@ body {
 
     /* featuredProducts */
     .featuredProducts {
-        background: url("/image/featuredProductBg.avif");
+        background: url("");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
